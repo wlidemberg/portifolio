@@ -1,0 +1,16 @@
+@use 'variables'
+@use 'mixins'
+
+#redes-container
+    @include mixins.flex-center
+    font-size: 2rem
+
+
+.social-btn
+    text-decoration: none
+    color: variables.$btn
+    transition: .3s
+
+    &:hover
+        transform: scale(1.5)
+        color: variables.$btn-hover

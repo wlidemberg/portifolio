@@ -1,0 +1,32 @@
+@use 'variables'
+
+@mixin flex-center
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    gap: 10px
+
+@mixin flex-start
+    display: flex
+    justify-content: flex-start
+    gap: 20px    
+
+
+@mixin btn
+    padding: 1rem 1.2rem
+    color: variables.$text-color
+    background-color: variables.$btn
+    text-decoration: none
+    font-size: 1.25rem
+    font-weight: 600
+    letter-spacing: 0.1rem
+    border-radius: 5px
+    margin-top: 10px
+
+@mixin hover
+    background-color: variables.$btn-hover
+
+
+
+    

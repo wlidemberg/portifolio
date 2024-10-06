@@ -1,0 +1,31 @@
+@use 'variables'
+@use 'mixins'
+
+.contato-container
+    display: flex
+    flex-direction: column
+    //width: 100%
+    //gap: 20px
+
+
+    &-card
+        display: flex
+        flex-direction: column
+        margin-bottom: 20px
+        border-bottom: 1px solid variables.$text-color-secondary
+        &-icon
+            color:  variables.$btn
+            font-size: 1.2rem
+
+        &-title
+            font-size: 0.875rem
+            font-weight: 300
+            color: variables.$btn
+            letter-spacing: 0.1em
+            text-transform: capitalize
+            
+        &-paragraph
+            font-size: 1rem
+            letter-spacing: 0.1em
+            font-weight: 600
+            color: variables.$text-color-secondary

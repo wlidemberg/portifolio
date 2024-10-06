@@ -1,0 +1,18 @@
+@use 'variables'
+@use 'mixins'
+
+
+.skills
+    @include mixins.flex-center
+    flex-wrap: wrap
+    gap: 0
+
+    &-skill-item
+        // background: variables.$title-color
+        flex: 1 1 350px
+        padding: 0px
+        text-align: center
+        color: variables.$text-color-alternate
+
+        span
+            font-size: 5rem
